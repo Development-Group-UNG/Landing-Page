@@ -1,0 +1,34 @@
+{
+  "name": "landign-page",
+  "version": "1.0.0",
+  "description": "",
+  "author": "LUC4SLM",
+  "url": "",
+  "license": "MIT License",
+  "keywords": "gulp",
+  "scripts": {
+    "start": "gulp && gulp watch",
+    "build": "gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-clean-css": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "sass": "^1.67.0"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "notify-send": "^0.1.2"
+  }
+}

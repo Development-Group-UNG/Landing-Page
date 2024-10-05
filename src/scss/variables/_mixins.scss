@@ -1,0 +1,26 @@
+@mixin flex-justify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: .5s all;
+}
+
+@mixin z-fixed{
+    z-index: 4;
+}
+
+@mixin fixed-item{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $body-font;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.container {
+    max-width: 1080px;
+    margin-left: 16px;
+    margin-right: 16px;
+    @include pc {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
