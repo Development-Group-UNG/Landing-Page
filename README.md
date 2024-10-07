@@ -34,3 +34,16 @@
 - `refactor` - Commits do tipo refactor referem-se a mudanças devido a **refatorações que não alterem sua funcionalidade**, como por exemplo, uma alteração no formato como é processada determinada parte da tela, mas que manteve a mesma funcionalidade, ou melhorias de performance devido a um code review.
 
 - `remove` - Commits do tipo remove indicam a exclusão de arquivos, diretórios ou funcionalidades obsoletas ou não utilizadas, reduzindo o tamanho e a complexidade do projeto e mantendo-o mais organizado.
+
+
+<details>
+  <summary> Dependencias ✔️ </summary>
+  <br/>
+  
+  - Node - 16.13.0
+  - NPM - 9.8.0
+  - SASS - 1.66.1
+  - Yarn - 1.22.19
+  - Gulp - CLI version: 2.3.0 | Local version: 4.0.2
+  - Terminal - Git Bash
+</details>
