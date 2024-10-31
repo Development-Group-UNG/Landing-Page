@@ -1,0 +1,115 @@
+.header {
+    &__container {
+        box-sizing: border-box;
+        height: 70px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #e7e7e7;
+    }
+
+    &__logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        font-family: sans-serif;
+        // &:hover {
+        //     background: #0000000d;
+        // }
+    }
+
+    &__nav {
+        @include mobile-large {
+            &.active {
+                .header {
+                    &__nav {
+                        &--link-container {
+                            height: calc(100vh - 70px);
+                            visibility: visible;
+                            overflow-y: auto;
+                            transform: translateY(-5px);
+                        }
+                        &--hamburguer {
+                            border-top-color: transparent;
+                            &:before {
+                                transform: rotate(135deg);
+                            }
+                            &:after {
+                                transform: rotate(-135deg);
+                                top: -7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--button {
+            display: none;
+            @include mobile-large {
+                display: flex;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: 0.5rem;
+            }
+        }
+        &--hamburguer {
+            @include mobile-large {
+                border-top: 2px solid;
+                width: 20px;
+
+                &:after,
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background: currentColor;
+                    margin-top: 5px;
+                    transition: 0.3s;
+                    position: relative;
+                }
+            }
+        }
+        &--link {
+            display: block;
+            padding: 0.5rem;
+            color: #000;
+            transition: 0.5s all;
+            &:hover,
+            &:focus {
+                background-color: #0000000d;
+                border-radius: 10px;
+            }
+
+            @include mobile-large {
+                padding: 16px;
+                margin: 16px;
+                // border-bottom: 2px solid #0000000d;
+            }
+
+            &-container {
+                display: flex;
+                list-style: none;
+                gap: 0.5rem;
+                @include mobile-large {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    top: 70px;
+                    right: 0px;
+                    background: #e7e7e7;
+                    transition: 0.6s;
+                    z-index: 1000;
+                    height: 0px;
+                    visibility: hidden;
+                    overflow-y: hidden;
+                }
+            }
+        }
+    }
+}

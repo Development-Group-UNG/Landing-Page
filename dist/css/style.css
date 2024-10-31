@@ -11,6 +11,8 @@ html {
 
 body ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 body a {
   text-decoration: none;
@@ -29,6 +31,107 @@ body img {
   .container {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+
+.header__container {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+}
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 440px) {
+  .header__nav.active .header__nav--link-container {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+    transform: translateY(-5px);
+  }
+  .header__nav.active .header__nav--hamburguer {
+    border-top-color: transparent;
+  }
+  .header__nav.active .header__nav--hamburguer:before {
+    transform: rotate(135deg);
+  }
+  .header__nav.active .header__nav--hamburguer:after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+.header__nav--button {
+  display: none;
+}
+@media screen and (max-width: 440px) {
+  .header__nav--button {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header__nav--hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  .header__nav--hamburguer:after, .header__nav--hamburguer:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+}
+.header__nav--link {
+  display: block;
+  padding: 0.5rem;
+  color: #000;
+  transition: 0.5s all;
+}
+.header__nav--link:hover, .header__nav--link:focus {
+  background-color: rgba(0, 0, 0, 0.0509803922);
+  border-radius: 10px;
+}
+@media screen and (max-width: 440px) {
+  .header__nav--link {
+    padding: 16px;
+    margin: 16px;
+  }
+}
+.header__nav--link-container {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 440px) {
+  .header__nav--link-container {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
   }
 }
 

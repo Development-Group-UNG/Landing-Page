@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="./dist/css/style.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +26,27 @@
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-    <header>
-        <nav>
+    <header class="header__container">
+        <!-- mudar para img -->
+        <a class="header__logo" id="logo" href="">Logo</a>
+        <!-- mudar para img -->
+        <nav class="header__nav">
+            <button aria-label="Abrir Menu" class="header__nav--button" id="btn-mobile" 
+                aria-haspopup="true" 
+                aria-controls="menu"
+                aria-expanded="false">
+                Menu
+                <span class="header__nav--hamburguer" id="hamburger"></span>
+            </button>
+            <ul class="header__nav--link-container" id="menu" role="menu">
+                <li><a class="header__nav--link" href="/">Sobre</a></li>
+                <li><a class="header__nav--link" href="/">Produtos</a></li>
+                <li><a class="header__nav--link" href="/">Portfólio</a></li>
+                <li><a class="header__nav--link" href="/">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -44,6 +63,8 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+
+    <script src="./dist/js/script.js"></script>
 </body>
 
 </html>
