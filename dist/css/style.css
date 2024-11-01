@@ -37,11 +37,16 @@ body img {
 .header__container {
   box-sizing: border-box;
   height: 70px;
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #e7e7e7;
+}
+@media screen and (max-width: 440px) {
+  .header__container {
+    display: flex;
+  }
 }
 .header__logo {
   font-size: 1.5rem;
@@ -51,6 +56,14 @@ body img {
   font-family: sans-serif;
 }
 @media screen and (max-width: 440px) {
+  .header__logo {
+    order: 2;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header__nav {
+    order: 1;
+  }
   .header__nav.active .header__nav--link-container {
     height: calc(100vh - 70px);
     visibility: visible;
@@ -74,23 +87,22 @@ body img {
 @media screen and (max-width: 440px) {
   .header__nav--button {
     display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0;
     border: none;
     background: none;
     cursor: pointer;
-    gap: 0.5rem;
   }
 }
 @media screen and (max-width: 440px) {
   .header__nav--hamburguer {
     border-top: 2px solid;
-    width: 20px;
+    width: 18px;
+    height: 18px;
   }
   .header__nav--hamburguer:after, .header__nav--hamburguer:before {
     content: "";
     display: block;
-    width: 20px;
+    width: 18px;
     height: 2px;
     background: currentColor;
     margin-top: 5px;
@@ -132,6 +144,11 @@ body img {
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header__change-theme {
+    order: 3;
   }
 }
 
