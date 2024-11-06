@@ -73,7 +73,7 @@ body img {
   height: 33px;
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 40%;
   transition: all 0.2s ease-out;
   background-color: #CCC;
   border-radius: 30px;
@@ -87,13 +87,29 @@ body img {
 .slick-arrow.slick-prev:focus:hover {
   background-color: #999;
 }
-
-.slick-next:before {
-  content: "" !important;
+@media screen and (max-width: 440px) {
+  .slick-arrow.slick-next,
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next:hover,
+  .slick-arrow.slick-prev:hover,
+  .slick-arrow.slick-next:focus,
+  .slick-arrow.slick-prev:focus {
+    top: 35%;
+  }
 }
 
-.slick-prev:before {
+.slick-prev:before, .slick-next:before {
   content: "" !important;
+}
+@media screen and (max-width: 440px) {
+  .slick-prev {
+    left: -5px !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .slick-next {
+    right: -5px !important;
+  }
 }
 
 .slick-arrow.slick-prev {
