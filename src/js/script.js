@@ -46,7 +46,7 @@ $(document).ready(function () {
     $('.group__development--container').slick({
         arrows: false,
         infinite: true,
-        dots: true,
+        dots: false,
         responsive: [
             {
                 breakpoint: 9999,
@@ -57,7 +57,7 @@ $(document).ready(function () {
                     arrows: true,
                     autoplay: false,
                     autoplaySpeed: 2500,
-                    dots: true
+                    dots: false
                 },
             },
             {
@@ -87,3 +87,27 @@ $(document).ready(function () {
         ],
     });
 });
+
+//ACCORDION FAQ
+document.querySelectorAll('.faq__container--question').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('svg');
+
+        document.querySelectorAll('.faq__container--answer').forEach(content => {
+            if (content !== answer) content.style.maxHeight = null;
+        });
+        document.querySelectorAll('.faq__container--question svg').forEach(otherIcon => {
+            if (otherIcon !== icon) otherIcon.style.transform = 'rotate(0deg)';
+        });
+
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            icon.style.transform = 'rotate(180deg)';
+        }
+    });
+});
+

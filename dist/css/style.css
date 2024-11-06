@@ -267,3 +267,56 @@ body img {
   gap: 10px;
   margin: 10px 0;
 }
+.faq {
+  display: flex;
+  gap: 15px;
+}
+@media screen and (max-width: 440px) {
+  .faq {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.faq__container {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.faq__container--image-content {
+  border-radius: 10px;
+}
+.faq__container--question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  background: #CCC;
+  color: #000;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.faq__container--question:hover {
+  background: #999;
+}
+.faq__container--question svg {
+  transition: transform 0.3s;
+}
+.faq__container--answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  background-color: #CCC;
+  color: #FFF;
+  padding: 0 15px;
+}
+.faq__container--answer-text {
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5;
+  padding: 15px 0;
+}
