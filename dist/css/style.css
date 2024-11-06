@@ -68,7 +68,7 @@ body img {
 .slick-arrow.slick-prev:hover,
 .slick-arrow.slick-next:focus,
 .slick-arrow.slick-prev:focus {
-  background: no-repeat center 10px/8px url(../../../src/assets/images/icone-seta.png);
+  background: no-repeat center 10px/8px url("https://lucaslm1.netlify.app/src/assets/images/icone-seta.png");
   width: 33px;
   height: 33px;
   position: absolute;
