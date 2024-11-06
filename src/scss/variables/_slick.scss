@@ -1,0 +1,68 @@
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-next:focus,
+.slick-arrow.slick-prev:focus {
+    background: no-repeat center 10px/8px url(../../../src/assets/images/icone-seta.png);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 10px 15px;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transition: all .2s ease-out;
+    background-color: $gray;
+    border-radius: 30px;
+    transition: .5s all;
+
+    &:hover{
+        background-color: #999;
+    }
+}
+
+.slick-next:before {
+    content: '' !important;
+}
+
+.slick-prev:before {
+    content: '' !important;
+}
+
+.slick-arrow.slick-prev {
+    transform: translateY(-50%) rotate(180deg);
+    right: 25px;
+}
+
+.slick-dots {
+    bottom: -55px !important;
+    @include mobile-large{
+        bottom: -155px !important;
+    }
+
+    li {
+        .slick-active {
+            button {
+                &::before {
+                    opacity: .75;
+                    color: $white  !important;
+                }
+            }
+        }
+
+        button {
+            &::before {
+                font-family: slick;
+                font-size: 14px !important;
+                color: $gray  !important;
+                transition: .5s;
+            }
+        }
+    }
+}
+
+.slick-dotted.slick-slider {
+    height: 300px;
+}

@@ -34,6 +34,96 @@ body img {
   }
 }
 
+.bx {
+  font-size: 20px;
+  color: #000;
+  transition: 0.5s;
+}
+.bx:hover {
+  transform: scale(1.2);
+}
+
+.bxl-whatsapp {
+  transition: 0.5s;
+}
+.bxl-whatsapp:hover {
+  color: #0d0;
+}
+.bxl-linkedin-square {
+  transition: 0.5s;
+}
+.bxl-linkedin-square:hover {
+  color: #007fe7;
+}
+.bxl-github {
+  transition: 0.5s;
+}
+.bxl-github:hover {
+  color: #0e2a55;
+}
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-next:focus,
+.slick-arrow.slick-prev:focus {
+  background: no-repeat center 10px/8px url(../../../src/assets/images/icone-seta.png);
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transition: all 0.2s ease-out;
+  background-color: #CCC;
+  border-radius: 30px;
+  transition: 0.5s all;
+}
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-next:hover:hover,
+.slick-arrow.slick-prev:hover:hover,
+.slick-arrow.slick-next:focus:hover,
+.slick-arrow.slick-prev:focus:hover {
+  background-color: #999;
+}
+
+.slick-next:before {
+  content: "" !important;
+}
+
+.slick-prev:before {
+  content: "" !important;
+}
+
+.slick-arrow.slick-prev {
+  transform: translateY(-50%) rotate(180deg);
+  right: 25px;
+}
+
+.slick-dots {
+  bottom: -55px !important;
+}
+@media screen and (max-width: 440px) {
+  .slick-dots {
+    bottom: -155px !important;
+  }
+}
+.slick-dots li .slick-active button::before {
+  opacity: 0.75;
+  color: #FFF !important;
+}
+.slick-dots li button::before {
+  font-family: slick;
+  font-size: 14px !important;
+  color: #CCC !important;
+  transition: 0.5s;
+}
+
+.slick-dotted.slick-slider {
+  height: 300px;
+}
+
 .header__container {
   box-sizing: border-box;
   height: 70px;
@@ -152,8 +242,28 @@ body img {
   }
 }
 
-body {
-  background-color: #FFF;
-  font-size: 18px;
-  font-weight: 500;
+.group__development--title {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+.group__development--name-developer {
+  text-align: center;
+  margin: 10px 0;
+}
+.group__development--block {
+  margin: 10px;
+}
+.group__development--block-image {
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+.group__development--block-image:hover {
+  transform: scale(1.03);
+}
+.group__development--block-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
 }

@@ -35,3 +35,33 @@ body{
         margin-right: auto !important;
     }
 }
+
+.bx{
+    font-size: $s-20;
+    color: $black;
+    transition: .5s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.bxl{
+    &-whatsapp{
+        transition: .5s;
+        &:hover{
+            color: #0d0;
+        }
+    }
+    &-linkedin-square{
+        transition: .5s;
+        &:hover{
+            color: #007fe7;
+        }
+    }
+    &-github{
+        transition: .5s;
+        &:hover{
+            color: #0e2a55;
+        }
+    }
+}

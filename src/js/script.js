@@ -27,7 +27,7 @@ const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
 const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-sun' : 'bx bx-sun'
 
 if (selectedTheme) {
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
@@ -40,3 +40,50 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//SLIDER DE DESENVOLVEDORES
+$(document).ready(function () {
+    $('.group__development--container').slick({
+        arrows: false,
+        infinite: true,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true,
+                    autoplay: false,
+                    autoplaySpeed: 2500,
+                    dots: true
+                },
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    autoplay: false,
+                    autoplaySpeed: 2500,
+                    dots: true
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: false,
+                    autoplay: false,
+                    autoplaySpeed: 2500,
+                    dots: false
+                },
+            },
+        ],
+    });
+});

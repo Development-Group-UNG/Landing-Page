@@ -1,9 +1,4 @@
 @import "./variables/all-variables";
 
 @import "./components/header";
-
-body{
-    background-color: $white;
-    font-size: $fs-18;
-    font-weight: $fw-5;
-}
+@import "./components/developers";

@@ -17,7 +17,7 @@ $large: 1024px;
 $tablet: 770px;
 $mobile-large: 440px;
 $mobile-small: 395px;
-$mobile-small: 370px;
+// $mobile-small: 370px;
 
 @mixin pc{
     @media screen and (min-width: 992px){
