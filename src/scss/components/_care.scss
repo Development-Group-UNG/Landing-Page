@@ -1,0 +1,50 @@
+.care{
+    &__line{
+        display: flex;
+        gap: 15px;
+        margin: 0 0 10px 0;
+        &:first-child{
+            margin: 10px 0 20px 0;
+        }
+
+        @include mobile-large {
+            flex-direction: column;
+        }
+        &--container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // padding: 0 10px;
+            @include mobile-large {
+                border: 1px solid $gray;
+                border-radius: 10px;
+                padding: 10px
+            }
+        }
+
+        &--image{
+            border-radius: 10px;
+            width: 100%;
+            transition: .5s all;
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+
+        &--title{
+            padding: 10px;
+            font-size: $s22;
+            font-weight: $w6;
+        }
+
+        &--description{
+            padding: 0 10px;
+            font-size: $s18;
+            font-weight: $w4;
+            @include mobile-large{
+                padding: 5px 5px 15px;
+            }
+        }
+    }
+}
