@@ -1,4 +1,11 @@
 $white: #FFF;
 $off-white: #F9F9F9;
 $gray: #CCC;
+$dark-gray: #BBB;
 $black: #000;
+
+$linear-effect: linear-gradient(
+    180deg,
+    $black,
+    $gray
+)
