@@ -59,6 +59,7 @@
                 border: none;
                 background: none;
                 cursor: pointer;
+                margin: 10px;
             }
         }
 
@@ -202,6 +203,7 @@
     &__change-theme {
         @include mobile-large {
             order: 3;
+            margin: 10px;
         }
     }
 }

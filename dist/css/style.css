@@ -219,6 +219,7 @@ body img {
     border: none;
     background: none;
     cursor: pointer;
+    margin: 10px;
   }
 }
 @media screen and (max-width: 440px) {
@@ -351,6 +352,7 @@ body img {
 @media screen and (max-width: 440px) {
   .header__change-theme {
     order: 3;
+    margin: 10px;
   }
 }
 
