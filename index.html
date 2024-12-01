@@ -42,7 +42,16 @@
             <ul class="header__nav--link-container" id="menu" role="menu">
                 <li><a class="header__nav--link" href="#">Sobre</a></li>
                 <li><a class="header__nav--link" href="#care">Cases de sucesso</a></li>
-                <li><a class="header__nav--link" href="#tools">Ferramentas</a></li>
+                <li class="header__nav--link has-submenu">
+                    <button class="header__nav--submenu-toggle" aria-expanded="false" aria-label="Abrir submenu Ferramentas">
+                        Ferramentas
+                    </button>
+                    <ul class="header__nav--submenu">
+                        <li><a href="#plataforms">Plataformas</a></li>
+                        <li><a href="#networks">Redes Sociais</a></li>
+                        <li><a href="#marketplace">Marketplaces</a></li>
+                    </ul>
+                </li>
                 <li><a class="header__nav--link" href="#">Portfólio</a></li>
                 <li><a class="header__nav--link" href="#group__development">Contato</a></li>
             </ul>
@@ -386,7 +395,7 @@
                 Ferramentas Essenciais para MEIs no Mercado Digital
             </h3>
 
-            <div class="tools__plataforms">
+            <div class="tools__plataforms" id="plataforms">
                 <h4 class="tools__plataforms--title">Plataformas</h4>
                 <div class="tools__container">
                     <div class="tools__container--image">
@@ -445,7 +454,7 @@
                 </div>
             </div>
 
-            <div class="tools__networks">
+            <div class="tools__networks" id="networks">
                 <h4 class="tools__networks--title">Redes sociais</h4>
                 <div class="tools__container">
                     <div class="tools__container--image">
@@ -504,7 +513,7 @@
                 </div>
             </div>
 
-            <div class="tools__marketplace">
+            <div class="tools__marketplace" id="marketplace">
                 <h4 class="tools__networks--title">Marketplaces</h4>
                 <div class="tools__container">
                     <div class="tools__container--image">

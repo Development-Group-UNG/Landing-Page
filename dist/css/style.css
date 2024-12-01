@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -241,6 +242,7 @@ body img {
   display: block;
   padding: 0.5rem;
   color: #000;
+  font-size: 16px;
   transition: 0.5s all;
 }
 .header__nav--link:hover, .header__nav--link:focus {
@@ -257,6 +259,7 @@ body img {
   display: flex;
   list-style: none;
   gap: 0.5rem;
+  align-items: center;
 }
 @media screen and (max-width: 440px) {
   .header__nav--link-container {
@@ -271,6 +274,78 @@ body img {
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
+  }
+}
+.header__nav--submenu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #e7e7e7;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 125px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 0 0 15px 15px;
+}
+.header__nav--submenu li {
+  padding: 10px;
+  transition: 0.5s all;
+}
+.header__nav--submenu li:hover {
+  background-color: rgba(0, 0, 0, 0.0509803922);
+}
+.header__nav--submenu li a {
+  color: #000;
+  text-decoration: none;
+}
+@media screen and (max-width: 440px) {
+  .header__nav--submenu {
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+.header__nav--submenu-toggle {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav--submenu-toggle:after {
+  content: "+";
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+.header__nav--submenu-toggle[aria-expanded=true]:after {
+  content: "−";
+}
+.header__nav .has-submenu {
+  position: relative;
+}
+@media screen and (max-width: 440px) {
+  .header__nav .has-submenu {
+    position: relative;
+  }
+}
+.header__nav .has-submenu.active-submenu > .header__nav--submenu {
+  max-height: 500px;
+  opacity: 1;
+}
+@media screen and (max-width: 440px) {
+  .header__nav .has-submenu.active-submenu > .header__nav--submenu {
+    background-color: #dbdbdb;
   }
 }
 @media screen and (max-width: 440px) {

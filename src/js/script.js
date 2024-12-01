@@ -14,6 +14,27 @@ function toggleMenu(event) {
     }
 }
 
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+
+// Submenu toggle logic
+const submenuToggles = document.querySelectorAll('.header__nav--submenu-toggle');
+
+submenuToggles.forEach((toggle) => {
+    toggle.addEventListener('click', (event) => {
+        const parent = toggle.closest('.has-submenu');
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+
+        // Toggle aria-expanded
+        toggle.setAttribute('aria-expanded', !expanded);
+
+        // Toggle submenu visibility
+        parent.classList.toggle('active-submenu');
+    });
+});
+
+
+
 //Adicionando sombra à header ao scrollar 50px
 const scrollHeader = () => {
     const header = document.getElementById("header");
