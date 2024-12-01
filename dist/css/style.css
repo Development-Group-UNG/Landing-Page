@@ -389,6 +389,12 @@ body img {
   padding: 15px 0;
 }
 
+.care__title {
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  margin: 35px 0 20px;
+}
 .care__line {
   display: flex;
   gap: 15px;
@@ -437,4 +443,79 @@ body img {
   .care__line--description {
     padding: 5px 5px 15px;
   }
+}
+
+.tools__title {
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  margin: 50px 0 35px;
+}
+.tools__container {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+@media screen and (max-width: 440px) {
+  .tools__container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 440px) {
+  .tools__container--reverse-mobile {
+    flex-direction: column-reverse;
+  }
+}
+.tools__container--image {
+  width: 35%;
+}
+@media screen and (max-width: 440px) {
+  .tools__container--image {
+    width: 100%;
+  }
+}
+.tools__container--image img {
+  border-radius: 15px;
+  transition: 0.5s all;
+}
+.tools__container--image img:hover {
+  transform: scale(1.03);
+}
+@media screen and (max-width: 440px) {
+  .tools__container--image img {
+    width: 100%;
+  }
+}
+.tools__container--text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 440px) {
+  .tools__container--text {
+    width: 100%;
+  }
+}
+.tools__container--text-title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 10px 0;
+  padding: 10px;
+}
+@media screen and (max-width: 440px) {
+  .tools__container--text-title {
+    margin: 0;
+  }
+}
+.tools__container--text-description {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.tools__plataforms--title, .tools__networks--title {
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
 }

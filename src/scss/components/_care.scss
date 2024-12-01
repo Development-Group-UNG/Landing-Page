@@ -1,4 +1,10 @@
 .care{
+    &__title{
+        font-size: $s22;
+        line-height: $s24;
+        text-align: center;
+        margin: 35px 0 20px;
+    }
     &__line{
         display: flex;
         gap: 15px;
