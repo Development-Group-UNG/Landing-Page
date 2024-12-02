@@ -602,6 +602,7 @@ body img {
   display: flex;
   gap: 15px;
   margin: 0 0 10px 0;
+  align-items: baseline;
 }
 .care__line:first-child {
   margin: 10px 0 20px 0;
@@ -616,6 +617,7 @@ body img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 @media screen and (max-width: 440px) {
   .care__line--container {
@@ -641,6 +643,7 @@ body img {
   padding: 0 10px;
   font-size: 18px;
   font-weight: 400;
+  text-align: justify;
 }
 @media screen and (max-width: 440px) {
   .care__line--description {
@@ -716,6 +719,7 @@ body img {
   line-height: 20px;
   margin: 10px 0;
   padding: 10px;
+  text-align: justify;
 }
 .tools__plataforms--title, .tools__networks--title {
   font-size: 22px;

@@ -141,3 +141,52 @@ document.querySelectorAll('.faq__container--question').forEach(question => {
     });
 });
 
+// window.sr = ScrollReveal({ reset: true });
+
+// var cascadingOne = {
+//     duration: '2000',
+//     origin: 'top',
+//     distance: '25px'
+// }
+
+// var cascadingTwo = {
+//     duration: '2000',
+//     origin: 'top',
+//     distance: '30px'
+// }
+
+// const header = [
+//     document.querySelector('.header__container')
+// ]
+
+// const mainBanner = [
+//     document.querySelector('.main__banner')
+// ]
+
+// const groupDevelopment = [
+//     document.querySelector('.group__development')
+// ]
+
+// const faq = [
+//     document.querySelector('.faq')
+// ]
+
+// const care = [
+//     document.querySelector('.care')
+// ]
+
+// const tools = [
+//     document.querySelector('.tools')
+// ]
+
+// const footer = [
+//     document.querySelector('.footer__container')
+// ]
+
+// sr.reveal(header, cascadingOne);
+// sr.reveal(mainBanner, cascadingOne);
+// sr.reveal(groupDevelopment, cascadingOne);
+// sr.reveal(faq, cascadingOne);
+// sr.reveal(care, cascadingOne);
+// sr.reveal(tools, cascadingOne);
+// sr.reveal(footer, cascadingOne);

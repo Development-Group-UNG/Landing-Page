@@ -9,6 +9,7 @@
         display: flex;
         gap: 15px;
         margin: 0 0 10px 0;
+        align-items: baseline;
         &:first-child{
             margin: 10px 0 20px 0;
         }
@@ -21,6 +22,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            flex: 1;
             // padding: 0 10px;
             @include mobile-large {
                 border: 1px solid $gray;
@@ -48,6 +50,7 @@
             padding: 0 10px;
             font-size: $s18;
             font-weight: $w4;
+            text-align: justify;
             @include mobile-large{
                 padding: 5px 5px 15px;
             }
