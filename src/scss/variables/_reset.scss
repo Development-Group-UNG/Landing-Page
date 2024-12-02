@@ -10,6 +10,37 @@ html {
 }
 
 body{
+    transition: .5s all;
+
+    &.dark-theme{
+        background-color: $black-2;
+
+        .main__banner--text,
+        .main__banner--text-2,
+        .group__development--title,
+        .group__development--name-developer,
+        .group__development--name-developer_description,
+        .bx,
+        .care__title,
+        .care__line--title,
+        .care__line--description,
+        .tools__title,
+        .tools__plataforms--title,
+        .tools__container--text-title,
+        .tools__networks--title,
+        .tools__container--text-description{
+            transition: .5s all;
+            color: $white;
+        }
+
+        .header__nav--submenu{
+            background-color: $blue;
+        }
+
+        .header__change-theme{
+            color: $black;
+        }
+    }
 
     &::-webkit-scrollbar {
         width: 9px;

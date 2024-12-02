@@ -10,6 +10,35 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  transition: 0.5s all;
+}
+body.dark-theme {
+  background-color: #060b16;
+}
+body.dark-theme .main__banner--text,
+body.dark-theme .main__banner--text-2,
+body.dark-theme .group__development--title,
+body.dark-theme .group__development--name-developer,
+body.dark-theme .group__development--name-developer_description,
+body.dark-theme .bx,
+body.dark-theme .care__title,
+body.dark-theme .care__line--title,
+body.dark-theme .care__line--description,
+body.dark-theme .tools__title,
+body.dark-theme .tools__plataforms--title,
+body.dark-theme .tools__container--text-title,
+body.dark-theme .tools__networks--title,
+body.dark-theme .tools__container--text-description {
+  transition: 0.5s all;
+  color: #FFF;
+}
+body.dark-theme .header__nav--submenu {
+  background-color: #76cafa;
+}
+body.dark-theme .header__change-theme {
+  color: #000;
+}
 body::-webkit-scrollbar {
   width: 9px;
 }
