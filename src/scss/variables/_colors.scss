@@ -3,9 +3,23 @@ $off-white: #F9F9F9;
 $gray: #CCC;
 $dark-gray: #BBB;
 $black: #000;
+$black-2: #222222;
+$blue: #76cafa;
+$blue-2: #8ad4ff;
+$hover-blue: #2cb0fd59;
+$hover-blue-2: #6dbce9a2;
+$dark-blue: #1e3679;
+$red: #ff0000;
+$light-green: #00dd00;
 
 $linear-effect: linear-gradient(
     180deg,
-    $black,
-    $gray
+    $blue,
+    $hover-blue-2
+);
+
+$linear-effect-2: linear-gradient(
+    180deg,
+    $blue,
+    $white
 )

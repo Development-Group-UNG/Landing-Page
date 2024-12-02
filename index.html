@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Lucas M. Souza">
+    <meta name="keywords" content="HTML, CSS, SCSS, JavaScript, Technology">
+
+    <title>Tecnologia & Sociedade</title>
+    <link rel="icon" type="image/x-icon" href="./src/assets/images/LogoTC-550X300-V2.jpeg">
 
     <link rel="stylesheet" href="./dist/css/style.css">
 
@@ -31,7 +35,7 @@
 
     <header class="header__container" id="header">
         <!-- mudar para img -->
-        <a class="header__logo" id="logo" href="">Logo</a>
+        <img class="header__logo" id="logo" src="./src/assets/images/LogoTC-550X300-V2.jpeg"/>
         <!-- mudar para img -->
         <nav class="header__nav">
             <button aria-label="Abrir Menu" class="header__nav--button" id="btn-mobile" aria-haspopup="true"
@@ -43,9 +47,9 @@
                 <li><a class="header__nav--link" href="#">Sobre</a></li>
                 <li><a class="header__nav--link" href="#care">Cases de sucesso</a></li>
                 <li class="header__nav--link has-submenu">
-                    <button class="header__nav--submenu-toggle" aria-expanded="false" aria-label="Abrir submenu Ferramentas">
+                    <a class="header__nav--submenu-toggle" href="#tools" aria-expanded="false" aria-label="Abrir submenu Ferramentas">
                         Ferramentas
-                    </button>
+                    </a>
                     <ul class="header__nav--submenu">
                         <li><a href="#plataforms">Plataformas</a></li>
                         <li><a href="#networks">Redes Sociais</a></li>
@@ -62,8 +66,21 @@
     </header>
 
     <main>
-        <section class="main__banner">
-            <img class="main__banner--image" src="./src/assets/images/1280x720.webp" alt="Banner Principal">
+        <section class="container main__banner">
+
+            <div class="main__banner--container-text">
+                <h1 class="main__banner--text">
+                    Tecnologia & Sociedade |
+                </h1>
+
+                <h2 class="main__banner--text-2">
+                    Importância do Mercado Digital para MEI's
+                </h2>
+            </div>
+
+            <div class="main__banner--container-image">
+                <img class="main__banner--image" src="./src/assets/images/group-people-banner.jpeg" alt="Banner Principal">
+            </div>
         </section>
 
         <section class="container group__development" id="group__development">
@@ -73,21 +90,24 @@
             <div class="group__development--container">
                 <!-- BLOCO 1 -->
                 <div class="group__development--block">
-                    <img class="group__development--block-image" src="./src/assets/images/300x300.png"
+                    <img class="group__development--block-image" src="./src/assets/images/Lucas-Souza.jpg"
                         alt="Desenvolvedor" />
                     <h1 class="group__development--name-developer">
-                        Nome
+                        Lucas M. Souza
                     </h1>
+                    <h2 class="group__development--name-developer_description">
+                        Desenvolvedor Web
+                    </h2>
                     <div class="group__development--block-networks">
-                        <a class="group__development--block-link" href="#" target="_blank" title="Link para WhatsApp">
+                        <a class="group__development--block-link" href="https://api.whatsapp.com/send/?phone=5511945451196" target="_blank" title="Link para WhatsApp">
                             <i class='bx bxl-whatsapp'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para LinkedIn">
+                        <a class="group__development--link" href="https://www.linkedin.com/in/lucaslmsc/" target="_blank" title="Link para LinkedIn">
                             <i class='bx bxl-linkedin-square'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para GitHub">
+                        <a class="group__development--link" href="https://github.com/LucasLM1" target="_blank" title="Link para GitHub">
                             <i class='bx bxl-github'></i>
                         </a>
                     </div>
@@ -95,67 +115,77 @@
 
                 <!-- BLOCO 2 -->
                 <div class="group__development--block">
-                    <img class="group__development--block-image" src="./src/assets/images/300x300.png"
+                    <img class="group__development--block-image" src="./src/assets/images/Henrique.jpg"
                         alt="Desenvolvedor" />
 
                     <h1 class="group__development--name-developer">
-                        Nome
+                        Henrique Marcos
                     </h1>
+                    <h2 class="group__development--name-developer_description">
+                        Estudante
+                    </h2>
 
                     <div class="group__development--block-networks">
-                        <a class="group__development--block-link" href="#" target="_blank" title="Link para WhatsApp">
+                        <a class="group__development--block-link" href="https://api.whatsapp.com/send/?phone=5511982531610" target="_blank" title="Link para WhatsApp">
                             <i class='bx bxl-whatsapp'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para LinkedIn">
+                        <a class="group__development--link" href="https://www.linkedin.com/in/henrique-marcos-316571263/" target="_blank" title="Link para LinkedIn">
                             <i class='bx bxl-linkedin-square'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para GitHub">
+                        <!-- <a class="group__development--link" href="#" target="_blank" title="Link para GitHub">
                             <i class='bx bxl-github'></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
 
                 <!-- BLOCO 3 -->
                 <div class="group__development--block">
-                    <img class="group__development--block-image" src="./src/assets/images/300x300.png"
+                    <img class="group__development--block-image" src="https://media.licdn.com/dms/image/v2/C4E03AQFN1dcd7f4vPA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1620737548853?e=1738800000&v=beta&t=mtWomOvi4wpkAQ7L-AfXDyjhcnmr2g-gA37liub1ups"
                         alt="Desenvolvedor" />
                     <h1 class="group__development--name-developer">
-                        Nome
+                        Rony Assunção
                     </h1>
+                    <h2 class="group__development--name-developer_description">
+                        Marceneiro
+                    </h2>
                     <div class="group__development--block-networks">
-                        <a class="group__development--block-link" href="#" target="_blank" title="Link para WhatsApp">
+                        <a class="group__development--block-link" href="https://api.whatsapp.com/send/?phone=5511947147347" target="_blank" title="Link para WhatsApp">
                             <i class='bx bxl-whatsapp'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para LinkedIn">
+                        <a class="group__development--link" href="https://www.linkedin.com/in/ronyynor2/" target="_blank" title="Link para LinkedIn">
                             <i class='bx bxl-linkedin-square'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para GitHub">
+                        <!-- <a class="group__development--link" href="#" target="_blank" title="Link para GitHub">
                             <i class='bx bxl-github'></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
 
                 <!-- BLOCO 4 -->
                 <div class="group__development--block">
-                    <img class="group__development--block-image" src="./src/assets/images/300x300.png"
+                    <img class="group__development--block-image" src="./src/assets/images/Gabriel.jpg"
                         alt="Desenvolvedor" />
                     <h1 class="group__development--name-developer">
-                        Nome
+                        Gabriel Rios
                     </h1>
+
+                    <h2 class="group__development--name-developer_description">
+                        Estudante
+                    </h2>
                     <div class="group__development--block-networks">
-                        <a class="group__development--block-link" href="#" target="_blank" title="Link para WhatsApp">
+                        <a class="group__development--block-link" href="https://api.whatsapp.com/send/?phone=5511971983425" target="_blank" title="Link para WhatsApp">
                             <i class='bx bxl-whatsapp'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para LinkedIn">
+                        <a class="group__development--link" href="www.linkedin.com/in/gabriel-rios-267264256" target="_blank" title="Link para LinkedIn">
                             <i class='bx bxl-linkedin-square'></i>
                         </a>
 
-                        <a class="group__development--link" href="#" target="_blank" title="Link para GitHub">
+                        <a class="group__development--link" href="https://github.com/gabirios1106" target="_blank" title="Link para GitHub">
                             <i class='bx bxl-github'></i>
                         </a>
                     </div>
@@ -210,7 +240,7 @@
         <section class="container faq" id="faq">
 
             <div class="faq__container--image">
-                <img class="faq__container--image-content" src="./src/assets/images/720x544.png" alt="Banner FAQ">
+                <img class="faq__container--image-content" src="./src/assets/images/vector-faq.png" alt="Banner FAQ">
             </div>
 
             <div class="faq__container--blocks">
@@ -574,7 +604,72 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer__container">
+            <div>
+                <h3 class="container footer__container--title">
+                    Tecnologia & Sociedade
+                </h3>
+                <h4 class="container footer__container--subtitle">
+                    Importância do Mercado Digital para MEI's
+                </h4>
+            </div>
+            <section class="container footer__container--information">
+
+
+
+                <div class="footer__container--logo">
+                    <img class="footer__container--logo-image" src="./src/assets/images/LogoTC-550X300-V2.jpeg" alt="">
+                </div>
+
+                <!-- <div class="footer__container--vector">
+                    <img class="footer__container--vector-image" src="./src/assets/images/footer-vector-1.png" alt="">
+                </div> -->
+    
+                <div class="footer__container--links">
+                    <h3 class="footer__container--links-title">
+                        Links úteis
+                    </h3>
+                    <ul class="footer__container--links-list">
+                        <li class="footer__container--links-content__container">
+                            <a class="footer__container--links-content" href="#">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="footer__container--links-content__container">
+                            <a class="footer__container--links-content" href="#care">
+                                Cases de sucesso
+                            </a>
+                        </li>
+                        <li class="footer__container--links-content__container">
+                            <a class="footer__container--links-content" href="#tools">
+                                Ferramentas
+                            </a>
+                        </li>
+                        <li class="footer__container--links-content__container">
+                            <a class="footer__container--links-content" href="#">
+                                Portfólio
+                            </a>
+                        </li>
+                        <li class="footer__container--links-content__container">
+                            <a class="footer__container--links-content" href="#contact">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="footer__container--credits">
+                <h5 class="container footer__container--end-title">
+                    Desenvolvido pelos alunos da UNG 
+                </h5>
+                <h6 class="container footer__container--end-subtitle">
+                    Ciências da Computação 2/8 🖥️
+                </h6>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js"></script>
 

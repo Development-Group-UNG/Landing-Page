@@ -1,11 +1,42 @@
 .main__banner{
-    &--image{
-        width: 100%;
-        height: auto;
-        border-radius: 0 0 15px 15px;
-
-        @include mobile-large{
-            margin: 70px 0 0 0;
+    margin: 70px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    @include mobile-large {
+        padding: 16px;
+    }
+    &--container{
+        &-text{
+            width: 40%;
         }
+        &-image{
+            width: 60%;
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    &--text{
+        font-size: $s24;
+        line-height: $s26;
+        font-weight: $w6;
+        @include mobile-large {
+            font-size: $s16;
+            line-height: $s18;
+        }
+        &-2{
+            font-size: $s22;
+            line-height: $s24;
+            font-weight: $w4;
+            @include mobile-large {
+                font-size: $s14;
+                line-height: $s18;
+            }
+        }
+    }
+
+    &--image{
+        width: 800px;
     }
 }

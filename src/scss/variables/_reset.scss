@@ -88,5 +88,6 @@ body{
 
 .scroll-header {
     transition: .5s all;
-    box-shadow: 0 4px 4px $dark-gray;
+    box-shadow: 0 4px 4px $hover-blue;
+    background-color: $blue !important;
 }
